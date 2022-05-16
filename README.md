@@ -6,7 +6,7 @@ Body Mass Index (BMI) is a person's weight in kilograms (or pounds) divided by t
 This is a simple bmi calculator app with an intutive user interface.
 ## Demo
 
-https://david-pantoja.github.io
+https://bmi.dpantoja.com
 
 ## Screenshots
 
@@ -22,9 +22,9 @@ https://david-pantoja.github.io
 React, React-Bootstrap
 
 ## Run Locally
-download and cd into bmi-calculator-main
--npm install
--npm start
+- download
+- $ npm install
+- $ npm start
 
 ## Acknowledgements
 UI structure influenced by

@@ -97,7 +97,7 @@ function Calculator() {
             messageEl.classList.add('text-success')
         }
         //Sets information for overweight bmi calculation
-        else if(bmi > 25 && bmi < 50) {
+        else if(bmi > 25 && bmi < 60) {
             if (bmi < 30){
                 setMessage('overweight')
             }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Card, Form, Control } from 'react-bootstrap'
+import { Card, Form } from 'react-bootstrap'
 import style from './Calculator.module.css'
 
 function Calculator() {
@@ -7,7 +7,7 @@ function Calculator() {
 
     const [weight, setWeight] = useState(null)
     const [height, setHeight] = useState(null)
-    const [metric, setMetric] = useState(false)
+    const [metric, setMetric] = useState(true)
     const [bmi, setBmi] = useState('')
     const [message, setMessage] = useState('')
     const [healthyWeight, setHealthyWeight] = useState('')
@@ -107,25 +107,27 @@ function Calculator() {
     useEffect(() => {
         calBmi();
       }, [weight, height]);
+    useEffect(() => {
+      console.log(metric)
+    }, [metric]);
       
     return (
         <>  
             <Card style={{ width: "26rem" }} border='light' className='p-4 shadow'>
                 <h2 className='text-center mb-3'>BMI Calculator</h2>
                 <Form className='mb-3 px-3' id='bmiForm'>
-                    <select>
-                        <option value="imperial">imperial</option>
-                        <option value="metric">metric</option>
-                        value={type}
-                        onChange={(e) => console.log(e.target.value)}
+                    <select onChange={(e) => setMetric(e.target.value === "true")} value={metric}>
+                        <option value={true}>metric</option>
+                        <option value={false}>imperial</option>
                     </select>
                     <Group className='mb-3'>
-                        <Label>Weight (kg)</Label>
-                        
+                        {metric && <Label>Weight (kg)</Label>}
+                        {!metric && <Label>Weight (lbs)</Label>}
                         <Control value={weight} onChange={(e) => setWeight(e.target.value)} />
                     </Group>
                     <Group className='mb-4'>
-                        <Label>Height (cm)</Label>
+                        {metric && <Label>Height (cm)</Label>}
+                        {!metric && <Label>Height (in)</Label>}
                         <Control value={height} onChange={(e) => setHeight(e.target.value)} />
                     </Group>
                 </Form>
@@ -148,6 +150,6 @@ function Calculator() {
 export default Calculator
 
 /**
- * Enable metrics toggling
+ * Work with correct metrics
  * Research BMI range
  */

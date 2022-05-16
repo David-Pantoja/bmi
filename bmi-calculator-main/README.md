@@ -1,50 +1,31 @@
 
 # BMI Calculator
 
-Body mass index (BMI) is a value derived from the mass (weight) and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is expressed in units of kg/m2, resulting from mass in kilograms and height in metres.
+Body Mass Index (BMI) is a person's weight in kilograms (or pounds) divided by the square of height in meters (or feet). A high BMI can indicate high body fatness. BMI screens for weight categories that may lead to health problems, but it does not diagnose the body fatness or health of an individual.
 
-It is a simple React BMI Calculator app which takes height(cm) and weight(kg) of a person and returns BMI of that person.
+This is a simple bmi calculator app with an intutive user interface.
 ## Demo
 
-https://cal-bmi.herokuapp.com/
+https://david-pantoja.github.io
+
 ## Screenshots
 
-![App Screenshot - Home screen](./src/assets/bmi.png)
-![App Screenshot - Underweight screen](./src/assets/bmi-1.png)
-![App Screenshot - Normal screen](./src/assets/bmi-2.png)
-![App Screenshot - Overweight screen](./src/assets/bmi-3.png)
+![App Screenshot - Healthy Imperial Screen](./src/assets/IH_bmi.png)
+![App Screenshot - Underweight Imperial Screen](./src/assets/IU_bmi.png)
+![App Screenshot - Overweight Imperial Screen](./src/assets/IO_bmi.png)
+![App Screenshot - Healthy Metric Screen](./src/assets/MH_bmi.png)
+![App Screenshot - Onderweight Metric Screen](./src/assets/MU_bmi.png)
+![App Screenshot - Underweight Metric Screen](./src/assets/MO_bmi.png)
 
 ## Built With
 
 React, React-Bootstrap
+
 ## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/nandanholla/bmi-calculator.git
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run start
-```
-
-
-## Authors
-
-- [@nandanholla](https://www.github.com/nandanholla)
-
+download and cd into bmi-calculator-main
+-npm install
+-npm start
 
 ## Acknowledgements
-
- - [Bmi icons created by photo3idea_studio - Flaticon](https://www.flaticon.com/free-icons/bmi)
- 
-![Logo](https://cdn-icons-png.flaticon.com/512/4349/4349072.png)
+UI structure influenced by
+- [/nandanholla](https://www.github.com/nandanholla)

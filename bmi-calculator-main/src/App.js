@@ -1,5 +1,7 @@
+//imports calculator components
 import Calculator from './components/Calculator';
 
+//Simple app component that contains background gradient and calculator
 function App() {
   return (
     <div id='container' className='bg-primary'>
@@ -10,4 +12,5 @@ function App() {
   );
 }
 
+//exports App component
 export default App;

@@ -1,8 +1,8 @@
 {
-  "name": "simple-calculator",
+  "name": "simple-bmi-calculator",
   "version": "0.1.0",
   "private": true,
-  "author": "Nandan Holla",
+  "author": "David Pantoja",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
